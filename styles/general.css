@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+:root {
+    --color-naranja: #E95B13;
+    --color-naranja-claro: #EC7335;
+    --color-negro: #212121
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: url(../assets/img/Captura-removebg-preview.png);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 8px 10px rgba(214, 214, 214, 0.308) ;
+}
+
+.contenedor_logo_imagen {
+    display: inline-block;
+    width: 2.5rem;
+    overflow:auto;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo_titulo {
+    color: var(--color-naranja-claro);
+    text-transform: capitalize;
+    font-family: "Playwrite HR", cursive;
+    font-size: 1.19rem;
+}
+
+.active {
+    color: var(--color-naranja) !important;
+}
+
+.nav-link {
+    color: var(--color-negro);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--color-naranja-claro);
+}
+
+.btn-naranja {
+    text-decoration: none;
+    background-color: var(--color-naranja-claro);
+    color: white;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+    border: 2px solid var(--color-naranja-claro);
+}
+
+.btn-naranja:hover {
+    color: var(--color-naranja);
+    background-color: transparent;
+    border: 2px solid var(--color-naranja);
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+}
+
+.contenedor_anuncio_titulo {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0;
+}
+
+.contenedor_anuncio_descripcion {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 0.5rem;
+}
+
+.contenedor_anuncio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center; 
+    color: white;
+    padding: 10px; 
+}
+
+.ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas {
+    width: 360px;
+    height: 150px;
+    overflow: auto;
+}
+
+
+@media screen and (min-width: 250px){
+    .contenedor_anuncio_titulo {
+        font-size: 0.7rem;
+    }
+    
+    .contenedor_anuncio_descripcion {
+        width: 100%;
+        padding-top: 0.5rem;
+        font-size: 0.5rem;
+
+    }
+}
+
+@media screen and (min-width: 500px){
+    .contenedor_anuncio_titulo {
+        font-size: 0.9rem;
+    }
+    
+    .contenedor_anuncio_descripcion {
+        width: 100%;
+        padding-top: 0.8rem;
+        font-size: 0.7rem;
+
+    }
+}
+
+@media screen and (min-width: 750px){
+    .contenedor_anuncio_titulo {
+        font-size: 1.1rem;
+    }
+    
+    .contenedor_anuncio_descripcion {
+        width: 100%;
+        padding-top: 1rem;
+        font-size: 0.7rem;
+
+    }
+}
+
+@media screen and (min-width: 980px){
+    .contenedor_anuncio_titulo {
+        font-size: 1.95rem;
+    }
+    
+    .contenedor_anuncio_descripcion {
+        width: 100%;
+        padding-top: 1rem;
+        font-size: 1.1rem;
+
+    }
+}
