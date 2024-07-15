@@ -1,0 +1,169 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.background-image {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/759/729/large_2x/cooking-and-kitchen-tools-seamless-pattern-in-doodle-style-background-with-coocking-tools-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}a
+
+.section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    background-color: #f1f8e9;
+}
+
+#location-info {
+    background-color: #ffebee;
+}
+
+h3, h4 {
+    color: #007bff;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link {
+    margin-right: 20px;
+}
+
+.container {
+    background-color: transparent;
+}
+
+/* Cambia el color de los enlaces del menú al verde cuando se pasa el cursor sobre cualquier elemento del menú */
+.navbar-nav .nav-item:hover .nav-link {
+    color: green;
+}
+
+/* Cambia el color del enlace "Buscar Comidas" a verde neón cuando se pasa el cursor sobre él */
+.navbar-nav .nav-item:nth-child(2):hover .nav-link {
+    color: #39ff14; /* Verde neón */
+}
+
+/* Cambia el color del enlace "Página Principal" a verde cuando se pasa el cursor sobre él */
+.navbar-nav .nav-item:nth-child(1):hover .nav-link {
+    color: green;
+}
+
+/* Cambia el color del enlace "Contacto" a verde cuando se pasa el cursor sobre él */
+.navbar-nav .nav-item:nth-child(3):hover .nav-link {
+    color: green;
+}
+
+/* Estilo para el botón de búsqueda */
+.btn-outline-success {
+    position: relative; /* Posición relativa para alinear el resplandor */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    background-color: transparent; /* Fondo transparente */
+    color: #ff7f00; /* Color de texto naranja */
+    border-color: #ff7f00; /* Color del borde naranja */
+    padding: 0.375rem 0.75rem; /* Ajustar el padding para el icono */
+}
+
+/* Estilo para el ícono dentro del botón */
+.btn-outline-success i {
+    font-size: 1.2rem; /* Ajusta el tamaño del ícono según sea necesario */
+    vertical-align: middle; /* Alinear verticalmente el ícono */
+    margin-right: 5px; /* Margen derecho para separación del texto */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-form input[type="search"] {
+    width: 0;
+    transition: width 0.6s ease-in-out, padding 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Añadir transición para opacity */
+    background-color: transparent;
+    border: 2px solid #ff7f00;
+    color: #ff7f00;
+    padding: 0;
+    box-shadow: 0 0 10px #ff7f00, 0 0 20px #ff7f00, 0 0 40px #ff7f00, 0 0 80px #ff7f00;
+    animation: glow-orange 1.5s infinite linear;
+    opacity: 0; /* Hacerlo invisible al inicio */
+    pointer-events: none; /* Desactivar la interactividad al inicio */
+}
+
+/* Animación para el resplandor naranja */
+@keyframes glow-orange {
+    0% { box-shadow: 0 0 10px #ff7f00, 0 0 20px #ff7f00, 0 0 40px #ff7f00, 0 0 80px #ff7f00; }
+    50% { box-shadow: 0 0 30px #ff7f00, 0 0 60px #ff7f00, 0 0 120px #ff7f00, 0 0 240px #ff7f00; }
+    100% { box-shadow: 0 0 10px #ff7f00, 0 0 20px #ff7f00, 0 0 40px #ff7f00, 0 0 80px #ff7f00; }
+}
+
+/* Estilo para la barra de búsqueda abierta */
+.search-form.open input[type="search"] {
+    width: 200px;
+    padding: 0.375rem 0.75rem;
+    opacity: 1; /* Hacerlo visible cuando está abierto */
+    pointer-events: auto; /* Activar la interactividad cuando está abierto */
+}
+
+
+/* Estilo para el botón de inicio de sesión */
+.login-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    color: #007bff; /* Color de texto azul */
+    border-color: #007bff; /* Color del borde azul */
+    padding: 0.375rem 0.75rem; /* Ajustar el padding para el ícono */
+}
+
+/* Estilo para el ícono dentro del botón de inicio de sesión */
+.login-btn i {
+    font-size: 1.2rem; /* Ajusta el tamaño del ícono según sea necesario */
+    vertical-align: middle; /* Alinear verticalmente el ícono */
+    margin-right: 5px; /* Margen derecho para separación del texto */
+}
+
+/* Estilo para la suscripción desplegable */
+.subscription-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ced4da; /* Borde gris */
+    width: 200px; /* Ancho del menú desplegable */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    display: none; /* Ocultar por defecto */
+}
+
+/* Mostrar el menú desplegable cuando el botón de inicio de sesión está activo */
+.login-btn.active + .subscription-dropdown {
+    display: block;
+}
+
+/* Estilo para los elementos de la suscripción */
+.subscription-dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333333; /* Color de texto gris oscuro */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+/* Cambiar el color de fondo al pasar el cursor sobre los elementos de la suscripción */
+.subscription-dropdown a:hover {
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+}
+
+
+/*
+
+
+
+*/

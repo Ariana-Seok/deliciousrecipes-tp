@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Recetas Gratis</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/phosphor-bold/chef-hat-bold-ycglyxchsxp67spgxu2vwd.png/chef-hat-bold-417d7bkfewab7wxww01m8q.png?_a=DAJFJtWIZAAC" alt="Logo" class="d-inline-block align-top">
+        Recetas Gratis
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Página Principal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Buscar Comidas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+        <form class="form-inline ml-auto search-form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success search-btn" type="button">
+                <i class="ri-search-eye-line"></i>
+            </button>
+        </form>
+        <div class="btn-group ml-2 login-dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="loginBtn">
+                Inicio de Sesión
+            </button>
+            <div class="dropdown-menu" aria-labelledby="loginBtn">
+                <a class="dropdown-item" href="#" id="subscriptionLink">Suscripción</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="background-image">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 section" id="contact-form">
+                <h3>Contacto</h3>
+                <p>Envíe su pregunta, crítica o sugerencia a continuación:</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" pattern="[A-Za-záéíóúñÁÉÍÓÚÑ\s]+" title="Solo se permiten letras y espacios">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Ingrese su mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="https://www.numar.net/wp-content/uploads/2022/10/plato-saludable.jpg" alt="Imagen Genérica" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12 section" id="location-info">
+                <h4>Nuestra Ubicación</h4>
+                <p>123 Calle de la Comida, Ciudad Gourmet, País del Sabor</p>
+                <h4>Contáctenos</h4>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: contacto@recetasgratis.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Inicio de Sesión / Registro -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión / Registro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario de Inicio de Sesión / Registro -->
+                <form>
+                    <div class="form-group">
+                        <label for="emailModal">Correo electrónico</label>
+                        <input type="email" class="form-control" id="emailModal" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordModal">Contraseña</label>
+                        <input type="password" class="form-control" id="passwordModal" placeholder="Ingrese su contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    <button type="button" class="btn btn-link">¿No tienes una cuenta? Regístrate</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../scripts/contacto.js"></script>
+</body>
+</html>
