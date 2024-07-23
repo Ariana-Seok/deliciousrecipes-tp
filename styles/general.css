@@ -4,7 +4,7 @@
 :root {
     --color-naranja: #E95B13;
     --color-naranja-claro: #EC7335;
-    --color-negro: #212121
+    --color-negro: #212121;
 }
 
 * {
@@ -268,6 +268,89 @@ body::before {
 
 .link_footer:hover {
     color:#faf5f4;
+}
+
+.main {
+    margin: 2.8rem 0 0 0;
+    padding: 1rem 2rem;
+}
+
+
+.seccion_recetas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-negro) !important;
+}
+
+
+.form-control {
+    border-radius: 5px 0 0 5px;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none;
+    border: 1px solid var(--color-naranja);
+}
+
+.btn_search {
+    border-radius: 0 5px 5px 0;
+    border: 1px solid var(--color-naranja);
+    background-color: var(--color-naranja-claro);
+    color: white;
+}
+
+.btn_search:hover {
+    background-color: var(--color-naranja);
+    color: white;
+}
+
+.contenedor_cards {
+    gap: 1rem;
+}
+
+.card_receta {
+    text-decoration: none;
+    cursor: pointer !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-img-top-receta {
+    height: 150px;
+}
+
+.card-img-top-receta:hover {
+    filter:brightness(1.15);
+}
+
+.card-body {
+    padding: 0.9rem 0.5rem 0.5rem 0.5rem;
+}
+
+.page-link {
+    color: var(--color-negro);
+}
+
+.active > .page-link {
+    background-color: #e3730bb0 !important;
+    border: 1px solid #e3730bb0;
+}
+
+.pagination {
+    border: 1px solid #e3730b2d;
+    border-radius: 6px;
+}
+
+.disabled > .page-link {
+    background-color: #d9961115;
+}
+
+.page-link:hover{
+    background-color: #d9961115;
 }
 
 @media screen and (min-width: 250px){
