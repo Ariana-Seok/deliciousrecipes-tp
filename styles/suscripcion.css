@@ -1,0 +1,63 @@
+body {
+    background: url('https://img.freepik.com/fotos-premium/mesa-navidena-casa-esta-llena-comida-generada-ia_866663-5884.jpg?w=1060') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: rgba(28, 30, 33, 0.9); /* Fondo oscuro con opacidad */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: white;
+}
+
+.form-container h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.form-group input::placeholder {
+    color: #888;
+}
+
+.btn-primary {
+    background: #e97604;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #ee9003;
+}
+
+.text-center a {
+    color: white;
+    text-decoration: underline;
+}
