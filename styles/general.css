@@ -17,20 +17,6 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #faf5f4;
 }
-/*
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background: url(../assets/img/Captura-removebg-preview.png);
-    opacity: 0.2;
-    z-index: -1;
-}
-*/
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.877);
@@ -358,6 +344,76 @@ body::before {
     background-color: #d9961124;
 }
 
+/*Modal inicio*/
+.modal-content {
+    border: none;
+    border-radius: 0;
+    max-width: 1000px; /* Aumentar el ancho del modal */
+    margin: auto;
+    background-color: transparent;
+}
+
+.login-form-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.login-form-overlay form {
+    background: rgba(255, 255, 255, 0.931);
+    padding: 2.2rem; /* Aumentar el padding del formulario */
+    border-radius: 10px;
+    width: 500px; /* Ajustar el ancho del formulario */
+    max-width: 90%; /* Asegurar que el formulario no sea demasiado ancho en pantallas pequeñas */
+}
+
+#loginModal .btn-primary {
+    background-color: #ff7f00;
+    border-color: #ff7f00;
+}
+
+#loginModal .btn-link {
+    color: #ff7f00; /* Color de texto*/
+}
+
+.label_form {
+    margin: 0.5rem 0 1rem 0;
+    font-weight: 500;
+}
+
+/* Pagina contacto */
+
+.seccion_contacto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: url(../assets/img/Captura-removebg-preview.png);
+    opacity: 0.08;
+    z-index: -1;
+}
+
+.seccion_contacto_titulo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.seccion_contacto_titulo p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+#location-info {
+    width: 100%;
+    background-color: white;
+    padding: 2rem 1.5rem;
+}
 
 @media screen and (min-width: 250px){
     .contenedor_anuncio_titulo {
