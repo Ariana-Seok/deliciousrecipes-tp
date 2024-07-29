@@ -266,6 +266,58 @@ body::before {
     color: #212121;
 }
 
+
+.seccion_categorias {
+    background-color: #fff9f6;
+}
+
+.seccion_recetas_destacadas {
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid var(--colorBordo);
+}
+
+.listado_recetas {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-color: var(--colorBordo) var(--colorGrisOscuro);
+}
+
+.contenedor_scroll {
+    margin: 1.8rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.listado_recetas .contenedor_scroll .receta_destacada {
+    margin-right: 1rem;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.card-descripcion {
+    font-size: 0.9rem;
+}
+
+.line-small{
+    max-width: 100px;
+    font-size: 85%;
+    border-width: 3px;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 4px solid #d99611;
+}
+
 .link_footer:hover {
     color:#faf5f4;
 }
@@ -286,6 +338,10 @@ body::before {
     color: var(--color-negro) !important;
 }
 
+.form_search {
+    margin: 0rem auto;
+    width: 85%;
+}
 
 .form-control {
     border-radius: 5px 0 0 5px;
@@ -327,6 +383,7 @@ body::before {
     filter:brightness(1.15);
 }
 
+
 .card-body {
     padding: 0.9rem 0.5rem 0.5rem 0.5rem;
 }
@@ -346,12 +403,13 @@ body::before {
 }
 
 .disabled > .page-link {
-    background-color: #d9961115;
+    background-color: #d9961124;
 }
 
 .page-link:hover{
-    background-color: #d9961115;
+    background-color: #d9961124;
 }
+
 
 @media screen and (min-width: 250px){
     .contenedor_anuncio_titulo {
