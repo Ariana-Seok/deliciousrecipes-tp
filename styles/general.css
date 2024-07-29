@@ -276,7 +276,6 @@ body::before {
     padding: 1rem 2rem;
 }
 
-
 .seccion_recetas {
     display: flex;
     flex-direction: row;
@@ -369,7 +368,14 @@ body::before {
         width: 100%;
         padding-top: 0.5rem;
         font-size: 0.5rem;
+    }
 
+    .ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas{
+        width: 250px;
+    }
+
+    .receta_destacada {
+        width: 17rem !important;
     }
 }
 
@@ -384,6 +390,10 @@ body::before {
         font-size: 0.7rem;
 
     }
+
+    .ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas {
+        width: 280px;
+    }
 }
 
 @media screen and (min-width: 750px){
@@ -395,7 +405,20 @@ body::before {
         width: 100%;
         padding-top: 1rem;
         font-size: 0.7rem;
+    }
 
+    .ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas {
+        width: 350px;
+    }
+
+    .receta_destacada {
+        width: 22rem !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav_recetas{
+        margin-bottom: 2rem !important;
     }
 }
 
