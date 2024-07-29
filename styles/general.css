@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 :root {
     --color-naranja: #E95B13;
     --color-naranja-claro: #EC7335;
@@ -14,8 +15,9 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: #faf5f4;
 }
-
+/*
 body::before {
     content: "";
     position: absolute;
@@ -28,15 +30,16 @@ body::before {
     opacity: 0.2;
     z-index: -1;
 }
+*/
 
 .navbar {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.877);
     box-shadow: 0 8px 10px rgba(214, 214, 214, 0.308) ;
 }
 
 .contenedor_logo_imagen {
     display: inline-block;
-    width: 2.5rem;
+    width: 9rem;
     overflow:auto;
 }
 
@@ -83,6 +86,7 @@ body::before {
 
 
 .carousel {
+    margin-top: 80px;
     position: relative;
     width: 100%;
 }
@@ -120,9 +124,238 @@ body::before {
 }
 
 .ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas {
+    position: relative;
     width: 360px;
+    height: auto;
+}
+
+
+.degradado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.7;
+    background: linear-gradient(0deg, rgba(255, 216, 157, 0.301) 6%, rgba(248, 246, 225, 0.192) 51%);
+    display: none;
+}
+
+.ancla_recetas_saladas:hover .degradado, .ancla_recetas_dulces:hover .degradado, .ancla_recetas_bebidas:hover .degradado {
+    display: block;
+}
+
+.footer {
+    background-color: #fcb751;
+    color: #212121;
+}
+
+.icono_ig:hover {
+    border: 2px solid #de487b;
+    background-color: #de487b;
+    color: white;
+    
+}
+
+.icono_ig {
+    border: 2px solid #de487b;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    color: #de487b;
+    font-weight: 200;
+}
+
+.icono_fb:hover {
+    border: 2px solid #3b5998;
+    background-color: #3b5998;
+    color: white;
+    
+}
+
+.icono_fb {
+    border: 2px solid #3b5998;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    color: #3b5998;
+    font-weight: 200;
+}
+
+.icono_wsp:hover {
+    border: 2px solid #00E676;
+    background-color: #00E676;
+    color: white;
+    
+}
+
+.icono_wsp {
+    border: 2px solid #00E676;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    color: #00E676;
+    font-weight: 200;
+}
+
+
+.icono_x {
+    border: 2px solid #00acee;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    color: #00acee;
+    font-weight: 200;
+}
+
+.icono_x:hover {
+    border: 2px solid #00acee;
+    background-color: #00acee;
+    color: white;
+}
+
+.link_footer {
+    color: #212121;
+}
+
+
+.seccion_categorias {
+    background-color: #fff9f6;
+}
+
+.seccion_recetas_destacadas {
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid var(--colorBordo);
+}
+
+.listado_recetas {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-color: var(--colorBordo) var(--colorGrisOscuro);
+}
+
+.contenedor_scroll {
+    margin: 1.8rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.listado_recetas .contenedor_scroll .receta_destacada {
+    margin-right: 1rem;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.card-descripcion {
+    font-size: 0.9rem;
+}
+
+.line-small{
+    max-width: 100px;
+    font-size: 85%;
+    border-width: 3px;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 4px solid #d99611;
+}
+
+.link_footer:hover {
+    color:#faf5f4;
+}
+
+.main {
+    margin: 2.8rem 0 0 0;
+    padding: 1rem 2rem;
+}
+
+.seccion_recetas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-negro) !important;
+}
+
+.form_search {
+    margin: 0rem auto;
+    width: 85%;
+}
+
+.form-control {
+    border-radius: 5px 0 0 5px;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none;
+    border: 1px solid var(--color-naranja);
+}
+
+.btn_search {
+    border-radius: 0 5px 5px 0;
+    border: 1px solid var(--color-naranja);
+    background-color: var(--color-naranja-claro);
+    color: white;
+}
+
+.btn_search:hover {
+    background-color: var(--color-naranja);
+    color: white;
+}
+
+.contenedor_cards {
+    gap: 1rem;
+}
+
+.card_receta {
+    text-decoration: none;
+    cursor: pointer !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-img-top-receta {
     height: 150px;
-    overflow: auto;
+}
+
+.card-img-top-receta:hover {
+    filter:brightness(1.15);
+}
+
+
+.card-body {
+    padding: 0.9rem 0.5rem 0.5rem 0.5rem;
+}
+
+.page-link {
+    color: var(--color-negro);
+}
+
+.active > .page-link {
+    background-color: #e3730bb0 !important;
+    border: 1px solid #e3730bb0;
+}
+
+.pagination {
+    border: 1px solid #e3730b2d;
+    border-radius: 6px;
+}
+
+.disabled > .page-link {
+    background-color: #d9961124;
+}
+
+.page-link:hover{
+    background-color: #d9961124;
 }
 
 
@@ -135,7 +368,14 @@ body::before {
         width: 100%;
         padding-top: 0.5rem;
         font-size: 0.5rem;
+    }
 
+    .ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas{
+        width: 250px;
+    }
+
+    .receta_destacada {
+        width: 17rem !important;
     }
 }
 
@@ -150,6 +390,10 @@ body::before {
         font-size: 0.7rem;
 
     }
+
+    .ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas {
+        width: 280px;
+    }
 }
 
 @media screen and (min-width: 750px){
@@ -161,19 +405,32 @@ body::before {
         width: 100%;
         padding-top: 1rem;
         font-size: 0.7rem;
+    }
 
+    .ancla_recetas_saladas, .ancla_recetas_dulces, .ancla_recetas_bebidas {
+        width: 350px;
+    }
+
+    .receta_destacada {
+        width: 22rem !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav_recetas{
+        margin-bottom: 2rem !important;
     }
 }
 
 @media screen and (min-width: 980px){
     .contenedor_anuncio_titulo {
-        font-size: 1.95rem;
+        font-size: 2.5rem;
     }
     
     .contenedor_anuncio_descripcion {
         width: 100%;
         padding-top: 1rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
 
     }
 }

@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeliciousRecipes - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/general.css">
+    <link rel="shortcut icon" href="./assets/logo/logo_cocinero.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg p-3">
+        <nav class="navbar navbar-expand-lg px-4 py-2 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand contenedor_logo d-flex justify-content-center align-items-center" href="#">
                     <div class="contenedor_logo_imagen">
-                        <img src="./assets/logo/cocinero.png" alt="Gorra de cocinero" class="imagen">
+                        <img src="./assets/logo/logo.png" alt="Gorra de cocinero" class="imagen">
                     </div>
-                    <span class="logo_titulo d-block mx-2 fw-bolder">DeliciousRecipes</span>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Recetas</a>
+                            <a class="nav-link" href="./pages/recetas.html">Recetas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
@@ -67,21 +68,129 @@
 
     <main>
         <section class="container-fluid w-100 p-5 d-flex align-items-center justify-content-evenly flex-wrap">
-            <a class="ancla_recetas_saladas d-block rounded-5" href="#">
-                <img class="imagen imagen_redondeada" src="./assets/img/recetasSaladas.png" alt="">
+            <a class="ancla_recetas_saladas d-block rounded-5 my-3" href="#">
+                <img class="imagen imagen_redondeada" src="./assets/img/recetasSaladas.png" alt="imagen de unas empanadas con texto">
+                <div class="degradado"></div>
             </a>
-            <a class="ancla_recetas_dulces d-block rounded-5" href="#">
-                <img class="imagen" src="./assets/img/recetasDulces.png" alt="">
+            <a class="ancla_recetas_dulces d-block rounded-5 my-3" href="#">
+                <img class="imagen" src="./assets/img/recetasDulces.png" alt="imagen de unas tortas con texto">
+                <div class="degradado"></div>
             </a>
 
-            <a class="ancla_recetas_bebidas d-block rounded-5" href="#">
-                <img class="imagen" src="./assets/img/recetasBebidas.png" alt="">
+            <a class="ancla_recetas_bebidas d-block rounded-5 my-3" href="#">
+                <img class="imagen" src="./assets/img/recetasBebidas.png" alt="imagen de un cafe con texto">
+                <div class="degradado"></div>
             </a>
+        </section>
+
+        <section class="container-fluid w-100 seccion_recetas_destacadas p-5">
+            <div class="listado_recetas">
+                <div class="contenedor_scroll">
+                    <div class="card receta_destacada" style="width: 22rem;">
+                        <img src="./assets/recetas/receta_destacada_1.webp" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold ">Brownie casero fácil</h5>
+                            <p>Disfruta de unos deliciosos brownies caseros con esta receta fácil y rápida. Con un exterior ligeramente crujiente y un interior suave y chocolatoso, estos brownies son perfectos para cualquier ocasión. Ya sea para una merienda, un postre especial o simplemente para satisfacer tu antojo de chocolate, esta receta te asegurará un resultado espectacular. ¡Prepara tus ingredientes y sorprende a todos con estos irresistibles brownies!</p>
+                        </div>
+                    </div>
+
+                    <div class="card receta_destacada" style="width: 22rem;">
+                        <img src="./assets/recetas/receta_destacada_2.png" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold">Postre Lemon Pie</h5>
+                            <p class="card-text">Descubre la perfecta combinación de sabores frescos y dulces con este exquisito Lemon Pie casero. Con una base crujiente de galleta, un relleno cremoso de limón y una capa de merengue dorado, este postre es una auténtica delicia para el paladar. Ideal para cualquier ocasión especial o para darle un toque sofisticado a tu merienda, el Lemon Pie siempre es un éxito.</p>
+                        </div>
+                    </div>
+
+                    <div class="card receta_destacada" style="width: 22rem; ">
+                        <img src="./assets/recetas/receta_destacada_3.webp" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold">Flan casero</h5>
+                            <p class="card-text">Sumérgete en la suavidad y el delicioso sabor de un flan casero tradicional. Con una textura cremosa y un caramelo dorado irresistible, este flan es el postre perfecto para cualquier comida. Su receta, sencilla y con ingredientes básicos, te permitirá disfrutar de un clásico de la repostería en poco tiempo. Ideal para compartir con la familia y amigos, el flan casero es siempre un acierto. Sigue esta receta paso a paso y déjate cautivar por su sabor y simplicidad. ¡Prepárate para recibir halagos con este delicioso flan casero!</p>
+                        </div>
+                    </div>
+
+                    <div class="card receta_destacada" style="width: 22rem;">
+                        <img src="./assets/recetas/receta_destacada_4.webp" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold">Flan De Banana</h5>
+                            <p class="card-text">Disfruta de un toque tropical con este exquisito Flan de Banana. Con una textura suave y cremosa, y el sabor natural de las bananas maduras, este flan es una variación deliciosa del clásico flan tradicional. El caramelo dorado añade un contraste perfecto, creando un postre irresistible que encantará a todos. Ideal para cualquier ocasión, este flan es sencillo de preparar y utiliza ingredientes básicos que seguramente ya tienes en tu cocina.</p>
+                        </div>
+                    </div>
+
+                    <div class="card receta_destacada" style="width: 22rem;">
+                        <img src="./assets/recetas/receta_destacada_1.webp" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold ">Brownie casero fácil</h5>
+                            <p>Disfruta de unos deliciosos brownies caseros con esta receta fácil y rápida. Con un exterior ligeramente crujiente y un interior suave y chocolatoso, estos brownies son perfectos para cualquier ocasión. Ya sea para una merienda, un postre especial o simplemente para satisfacer tu antojo de chocolate, esta receta te asegurará un resultado espectacular. ¡Prepara tus ingredientes y sorprende a todos con estos irresistibles brownies!</p>
+                        </div>
+                    </div>
+
+                    <div class="card receta_destacada" style="width: 22rem;">
+                        <img src="./assets/recetas/receta_destacada_2.png" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold">Postre Lemon Pie</h5>
+                            <p class="card-text">Descubre la perfecta combinación de sabores frescos y dulces con este exquisito Lemon Pie casero. Con una base crujiente de galleta, un relleno cremoso de limón y una capa de merengue dorado, este postre es una auténtica delicia para el paladar. Ideal para cualquier ocasión especial o para darle un toque sofisticado a tu merienda, el Lemon Pie siempre es un éxito.</p>
+                        </div>
+                    </div>
+
+                    <div class="card receta_destacada" style="width: 22rem; ">
+                        <img src="./assets/recetas/receta_destacada_3.webp" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold">Flan casero</h5>
+                            <p class="card-text">Sumérgete en la suavidad y el delicioso sabor de un flan casero tradicional. Con una textura cremosa y un caramelo dorado irresistible, este flan es el postre perfecto para cualquier comida. Su receta, sencilla y con ingredientes básicos, te permitirá disfrutar de un clásico de la repostería en poco tiempo. Ideal para compartir con la familia y amigos, el flan casero es siempre un acierto.</p>
+                        </div>
+                    </div>
+
+                    <div class="card receta_destacada" style="width: 22rem;">
+                        <img src="./assets/recetas/receta_destacada_4.webp" class="card-img-top" alt="imagen de comida">
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold">Flan De Banana</h5>
+                            <p class="card-text">Disfruta de un toque tropical con este exquisito Flan de Banana. Con una textura suave y cremosa, y el sabor natural de las bananas maduras, este flan es una variación deliciosa del clásico flan tradicional. El caramelo dorado añade un contraste perfecto, creando un postre irresistible que encantará a todos. Ideal para cualquier ocasión, este flan es sencillo de preparar y utiliza ingredientes básicos que seguramente ya tienes en tu cocina. Sigue esta receta paso a paso y sorprende a tus seres queridos con un postre que combina la suavidad del flan con la dulzura y el aroma de las bananas. ¡Una delicia que no te puedes perder!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class=" pt-5 footer px-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="contenedor_logo d-flex justify-content-center align-items-center" href="#">
+                        <div class="contenedor_logo_imagen">
+                            <img src="./assets/logo/logo.png" alt="Gorra de cocinero" class="imagen">
+                        </div>
+                    </a>
 
+                    <div class="contenedor_redes d-flex align-items-center justify-content-center flex-wrap p-3">
+                        <i class="bi bi-instagram mx-2 fs-4 icono_ig"></i>
+                        <i class="bi bi-facebook mx-2 fs-4 icono_fb"></i>
+                        <i class="bi bi-whatsapp mx-2 fs-4 icono_wsp"></i>
+                        <i class="bi bi-twitter-x mx-2 fs-4 icono_x"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sobre nosotros</h5>
+                    <p>Somos una comunidad que se dedica a compartir las mejores recetas de cocina. Nuestra misión es inspirar y facilitar la preparación de deliciosos platillos en casa.</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="link_footer">Inicio</a></li>
+                        <li><a href="#" class="link_footer">Recetas</a></li>
+                        <li><a href="#" class="link_footer">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="text-center py-3">
+                <small>&copy; 2024 Delicius Recipes - Todos los derechos reservados.</small>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
