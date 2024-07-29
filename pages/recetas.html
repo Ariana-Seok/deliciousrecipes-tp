@@ -33,10 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-naranja" href="#">Iniciar Sesión / Registrarse</a>
-                    </li>
                 </ul>
+                <button class="btn btn-naranja" id="loginBtn">Iniciar Sesión</button>
+                <a class="btn btn-naranja" href="./suscripcion.html" id="suscripcionBtn">Suscribirse</a>
             </div>
             
         </div>
@@ -288,6 +287,30 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal de Inicio de Sesion -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="login-form-overlay d-flex align-items-center justify-content-center">
+                            <form class="text-center p-4">
+                                <div class="form-group">
+                                    <label for="emailModal" class="label_form">Correo electrónico</label>
+                                    <input type="email" class="form-control mb-2" id="emailModal" placeholder="Ingrese su correo electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordModal" class="label_form">Contraseña</label>
+                                    <input type="password" class="form-control mb-4" id="passwordModal" placeholder="Ingrese su contraseña">
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Iniciar Sesión</button>
+                                <a href="./pages/suscripcion.html" class="btn btn-link">¿No tienes una cuenta? Regístrate</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class=" pt-5 footer px-4">
@@ -327,6 +350,9 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
